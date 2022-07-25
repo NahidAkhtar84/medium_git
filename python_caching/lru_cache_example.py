@@ -4,36 +4,59 @@ import time
 @cached(cache = LRUCache(maxsize = 3))
 def myfunc(n):
     # This delay resembles some task
-    s = time.time()
     time.sleep(n)
-    print("\nTime taken to execute: ", time.time() - s)
     return (f"Executed: {n}")
-   
+
+s = time.time()
 print(myfunc(3))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(3))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(2))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(1))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(4))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(1))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(3))
+print("Time Taken to execute: ", time.time() - s, "\n")
 
 '''
 Result:
 
-Time taken to execute:  3.0030837059020996
 Executed: 3
-Executed: 3
+Time Taken to execute:  3.003572702407837 
 
-Time taken to execute:  2.002063751220703
+Executed: 3
+Time Taken to execute:  0.00012040138244628906 
+
 Executed: 2
+Time Taken to execute:  2.002492666244507 
 
-Time taken to execute:  1.001054286956787
 Executed: 1
+Time Taken to execute:  1.0015416145324707 
 
-Time taken to execute:  4.004071950912476
 Executed: 4
-Executed: 1
+Time Taken to execute:  4.004684925079346 
 
-Time taken to execute:  3.0007569789886475
+Executed: 1
+Time Taken to execute:  0.0001659393310546875 
+
 Executed: 3
+Time Taken to execute:  3.0035295486450195 
+
 '''

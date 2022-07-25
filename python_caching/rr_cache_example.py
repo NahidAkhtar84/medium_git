@@ -5,51 +5,85 @@ import time
 def myfunc(n):
 	s = time.time()
 	time.sleep(n)
-	print("\nTime taken to execute: ", time.time() - s)
 	return (f"Executed: {n}")
 
+s = time.time()
 print(myfunc(3))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(3))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(2))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(6))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(5))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(1))
-print(myfunc(3))
-print(myfunc(3))
-print(myfunc(6))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(2))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
+print(myfunc(6))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
+print(myfunc(2))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(1))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(5))
+print("Time Taken to execute: ", time.time() - s, "\n")
 
 '''
 Result:
 
-Time taken to execute:  3.0030834674835205
 Executed: 3
-Executed: 3
+Time Taken to execute:  3.003613233566284 
 
-Time taken to execute:  2.0020968914031982
+Executed: 3
+Time Taken to execute:  0.00010895729064941406 
+
 Executed: 2
+Time Taken to execute:  2.0036702156066895 
 
-Time taken to execute:  6.006072521209717
 Executed: 6
+Time Taken to execute:  6.007461309432983 
 
-Time taken to execute:  5.005061388015747
 Executed: 5
+Time Taken to execute:  5.005535364151001 
 
-Time taken to execute:  1.0010602474212646
 Executed: 1
+Time Taken to execute:  1.0015869140625 
 
-Time taken to execute:  3.0030720233917236
-Executed: 3
-Executed: 3
-Executed: 6
-
-Time taken to execute:  2.00205659866333
 Executed: 2
+Time Taken to execute:  2.0025484561920166 
+
+Executed: 6
+Time Taken to execute:  6.006529808044434 
+
+Executed: 2
+Time Taken to execute:  2.002703905105591 
+
 Executed: 1
+Time Taken to execute:  0.00014352798461914062 
 
-Time taken to execute:  5.005077362060547
 Executed: 5
-
+Time Taken to execute:  5.005505800247192 
 '''
