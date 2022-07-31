@@ -43,6 +43,10 @@ print(myfunc(6))
 print("Time Taken to execute: ", time.time() - s, "\n")
 
 s = time.time()
+print(myfunc(2))
+print("Time Taken to execute: ", time.time() - s, "\n")
+
+s = time.time()
 print(myfunc(1))
 print("Time Taken to execute: ", time.time() - s, "\n")
 
@@ -55,20 +59,23 @@ print("Time Taken to execute: ", time.time() - s, "\n")
 Result:
 
 Executed: 2
-Time Taken to execute:  2.0028305053710938 
+Time Taken to execute:  2.0024309158325195 
 
 Executed: 2
-Time Taken to execute:  0.0008218288421630859 
+Time Taken to execute:  0.00011897087097167969 
 
 Executed: 6
-Time Taken to execute:  6.006418943405151 
+Time Taken to execute:  6.006444454193115 
 
 Executed: 6
-Time Taken to execute:  6.0064873695373535 
+Time Taken to execute:  6.006414175033569 
+
+Executed: 2
+Time Taken to execute:  2.0024681091308594 
 
 Executed: 1
-Time Taken to execute:  1.0014309883117676 
+Time Taken to execute:  1.0027210712432861 
 
 Executed: 1
-Time Taken to execute:  0.00011491775512695312
+Time Taken to execute:  0.00016355514526367188 
 '''
