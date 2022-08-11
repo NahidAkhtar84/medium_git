@@ -9,10 +9,8 @@ def myfunc(n):
     fifo_cache.append(n)
     if len(fifo_cache)>CACHE_LIMIT:
       fifo_cache.pop(0)
-    return (f"Executed: {n}")
-  else:
 
-    return (f"Executed: {n}")
+  return (f"Executed: {n}")
 
 s = time.time()
 print(myfunc(3))
